@@ -132,6 +132,18 @@ importers:
 
   packages/example:
     devDependencies:
+      '@workspace/lib':
+        specifier: workspace:*
+        version: link:../lib
+      '@workspace/linter-config':
+        specifier: workspace:*
+        version: link:../../config/linter-config
+      '@workspace/typescript-config':
+        specifier: workspace:*
+        version: link:../../config/typescript-config
+
+  packages/lib:
+    devDependencies:
       '@workspace/linter-config':
         specifier: workspace:*
         version: link:../../config/linter-config
